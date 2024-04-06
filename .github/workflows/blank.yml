@@ -11,3 +11,8 @@ jobs:
       
     - name: Print a message
       run: echo "Hello, world!"
+      
+    - name: Compile Kotlin code
+      run: |
+        echo "Compiling Kotlin code..."
+        kotlinc HelloWorld.kt -include-runtime -d HelloWorld.jar
